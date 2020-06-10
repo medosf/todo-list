@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+        .big{
+            margin-top: -100px;
+            margin-left: -100px;
+            background-color: red;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            
+        }
+        .big::after,small::after,smaller::after{
+            clear: both;
+        }
+        .small{
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+        
+        }
+        
+        .smaller{
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+
+        }
+
+
+        .nav{
+            display: flex;
+            position: absolute;
+            top: 0;
+            margin-left: 200px;
+            justify-content: space-around;
+            width: 80%;
+            flex-direction: row;
+            align-items: baseline;
+
+        }
+        .nav > ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+    
+        }
+        .nav > ul > li {
+            padding-left: 10px;
+        }
+        
+        .nav > input {
+            height: 25px;
+            border-radius: 30px;
+            width: 250px;
+            border: 1px solid red;
+
+        }
+        .nav > input::placeholder {
+            padding-left: 10px; 
+        }
+
+
+        .cat-parent{
+            position: relative;
+        }
+        .cat{
+            display: none;
+            position: absolute;
+            margin-top: 15px;
+            background-color: rgba(0, 0, 0, 0.253);
+    
+        }
+
+        .cat-parent:hover  + .cat{
+            display: block;
+        }
+        .cat:hover{
+            display: block;
+        }
+        .box {
+            /* width: 500px;
+            height: 600px;
+            background-color: rgba(0, 0, 0, 0.507);
+           position: absolute;
+           margin-top: -160px;
+           margin-left: auto;
+           margin-right: auto; */
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <hi>hi</hi>
+
+    <div class="big">
+        
+        <div class="small">
+            <div class="smaller"></div>
+        </div>
+        
+
+    </div>
+    
+    <div class="nav">
+        <ul>
+
+            <li class="cat-parent">Catagroies</li>
+            <div class="cat">
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                    <li>four</li>
+                </ul>
+            </div>
+            <li>Deals</li>
+            <li>What`s New</li>
+            <li>Same Day Delivery</li>
+        </ul>
+        <input type="text" placeholder="search here...">
+    </div>
+    <div class="box" ></div>
+    
+</body>
+</html>

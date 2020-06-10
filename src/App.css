@@ -1,0 +1,106 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #42275a, #734b6d) ;
+  height: 100%;
+  color: white;
+  
+}
+
+ul{
+  list-style: none;
+  /* background-color: blue;
+  width: 50%; */
+  text-decoration: none;
+}
+
+/* buttons styling*/
+button {
+  margin: 5px;
+  border: 1px solid black;
+  background: #d34556;
+  border-radius: 5px;
+
+}
+button:hover{
+  border-color: gray;
+}
+
+.top-buttons{
+  background: #455595;
+}
+
+.myapp-ul{
+  padding: 0;
+}
+
+/* ---------------------------------- */
+
+.myapp {
+  background-color: rgba(134, 129, 129, 0.219);
+  width: 60%;
+  margin: 5% auto;
+  min-height: 80vh;
+  border-radius: 10px;
+  position: relative;
+ 
+}
+
+
+
+/*todo items*/
+
+.todo-item{
+  width: 80%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  margin: 10px auto;
+  background-color: rgba(150, 11, 80, 0.589); 
+  border-radius: 10px;
+  flex-wrap: wrap;
+  overflow: auto;
+  
+}
+
+
+
+/*styling for form input and button */
+.myform {
+  margin: auto;
+  /* display: flex; */
+  justify-content: space-around;
+  
+}
+.myform input{
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.myform input::placeholder{
+  padding-left: 5px;
+}
+.myform button{
+  height: 35px;
+  border: 1px soild black;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #455595;  
+  color: white;
+  
+}
+/*media styling*/
+@media only screen and (max-width: 600px){
+  .myapp {
+    width: 90%;
+    padding: 1px;
+  }
+  .myform input{
+    width: 220px;
+  }
+}
